@@ -27,7 +27,7 @@ Create a javascript function that validates the contact for data. It should vali
 
 Part III.
 
-In a separate file, create a Ruby class. The class should have 2 methods, one that accepts a string as a param, and returns a hash.
+You have the option to use one of the following languages for this part: Ruby, Python, JavaScript, Go or Java. In a separate file, create a class (or it's equivalent in the language you chose). The class should have 2 methods, one that accepts a string as a param, and returns a hash.
 
 The method will return each unique letter (case-insensitive) the string contains in order from most frequent to least frequent.
 
@@ -49,4 +49,4 @@ You can assume that you will only get positive integers as inputs.
 
 You should be working in your own branch - generate commits at logical stop points. When you are finished, create a pull request and we will review your work. Do not push anything to master.
 
-please dont hesitate to email or contact us on Google Hangouts (**todd@masteryconnect.com**, **adam@masteryconnect.com**, **eric@masteryconnect.com**) if you have any questions at all.
+please dont hesitate to email or contact us on Google Hangouts (**mwest@masteryconnect.com**, **josh@masteryconnect.com**) if you have any questions at all.

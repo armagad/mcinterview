@@ -50,4 +50,4 @@ You can assume that you will only get positive integers as inputs.
 
 You should be working in your own branch - generate commits at logical stop points. When you are finished, create a pull request and we will review your work. Do not push anything to master.
 
-please dont hesitate to email or contact us on Google Hangouts (**mwest@masteryconnect.com**, **josh@masteryconnect.com**) if you have any questions at all.
+please don't hesitate to email or contact us on Google Hangouts (**mwest@masteryconnect.com**, **josh@masteryconnect.com**, **rick@masteryconnect.com**) if you have any questions at all.

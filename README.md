@@ -7,7 +7,7 @@ Part I.
 
 Create a contact form that would be production-ready.
 *The form should have the following fields:*
-First Name, Last Name, Phone, Email, and a textarea for a message(1000 characters max.)
+First Name, Last Name, Phone, Email, and a textarea for a message(1000 characters max.) All fields except for phone are required.
 
 Please use the design files in /graphics as a guide for the UI.
 

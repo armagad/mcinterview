@@ -50,14 +50,14 @@ You have the option to use one of the following languages for this part:
 
 In a separate file, create a class (or it's equivalent in the language you chose). The class should contain each of the following methods:
 
-_Letter Counting_
+##### Letter Counting
 This method accepts a string as a param, and returns an ordered array, hash, dictionary (depending on language).
 
 The method will return each unique letter (case-insensitive) the string contains in order from most frequent to least frequent.
 
 eg. if the input string is 'foo bar baz', the return for a ruby method should be: {a=>2, b=>2, o=>2, f=>1, r=>1, z=>1}. The detail of the return method will vary based on language but should maintain the order and count of each letter.
 
-_Divisors_
+##### Divisors
 The second method takes an integer and returns an array with all of the integer's divisors(except for 1 and the number itself). In weakly typed languages (Ruby, Python, Javascript), if the number is prime return the string '(integer) is prime'.  In strongly typed languages (Go, Java, C++), if the number is prime, it should return an empty array.
 
 Example:

@@ -5,6 +5,7 @@
 ### Part I - Form creation and styling
 
 Create a registration form that would be production-ready. The form should have the following fields:
+
 * First Name
 * Last Name
 * Phone
@@ -28,10 +29,10 @@ All fields except for phone are required.
 
 You should also vaildate that the email address is not already taken.  You can do this by using an API:
 
-**Endpoint:** http://codetest.socrative.com/v1/api/email-check/(email to test)/
-**Method:** GET
-**Success Response** 200 OK
-**Error Response** 409 Conflict (email already exists); 400 Bad Request (invalid email)
+- **Endpoint:** http://codetest.socrative.com/v1/api/email-check/(email to test)/
+- **Method:** GET
+- **Success Response** 200 OK
+- **Error Response** 409 Conflict (email already exists); 400 Bad Request (invalid email)
 
 Since this is a static API, the values won't change.  For testing, the following email addresses will cause a conflict: a@a.com, test@masteryconnect.com
 
@@ -39,6 +40,7 @@ Since this is a static API, the values won't change.  For testing, the following
 ### Part III - Backend
 
 You have the option to use one of the following languages for this part: 
+
 * Ruby
 * Python
 * JavaScript

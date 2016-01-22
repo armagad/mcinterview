@@ -1,11 +1,10 @@
 package part3
 
 import (
-	"strings"
-	"log"
-	"unicode/utf8"
 	"sort"
 	"strconv"
+	"strings"
+	"unicode/utf8"
 )
 
 /*
@@ -40,6 +39,8 @@ func Countletters(word string) (l Lettercounts) {
 	return l
 }
 
+func (l Lettercounts) Get(r rune) uint { return l.letters[r] }
+
 func (l Lettercounts) String() string {
 	str := make([]byte, l.length)
 	pos := 0
@@ -62,22 +63,25 @@ func (l Lettercounts) Json() string {
 	comma := false
 	l.Foreach(func(v uint, k rune) {
 		if comma {
-			str[pos] = ',' ; pos += 1
+			str[pos] = ','
+			pos += 1
 		} else {
 			comma = true
 		}
 
-		str[pos] = '"' ; pos += 1
+		str[pos] = '"'
+		pos += 1
 		pos += utf8.EncodeRune(str[pos:], k)
-		str[pos] = '"' ; pos += 1
-		str[pos] = ':' ; pos += 1
+		str[pos] = '"'
+		pos += 1
+		str[pos] = ':'
+		pos += 1
 		digits := strconv.Itoa(int(v))
-		for i :=0 ; i < len(digits) ; i++ {
+		for i := 0; i < len(digits); i++ {
 			str[pos] = digits[i]
 			pos += 1
 		}
 	})
-	log.Println(str)
 	return string(str)
 }
 
@@ -105,8 +109,8 @@ type kv struct {
 
 type byCountAlpha []kv
 
-func (a byCountAlpha) Len() int           { return len(a) }
-func (a byCountAlpha) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
+func (a byCountAlpha) Len() int      { return len(a) }
+func (a byCountAlpha) Swap(i, j int) { a[i], a[j] = a[j], a[i] }
 func (a byCountAlpha) Less(i, j int) bool {
 	if a[i].v == a[j].v {
 		return a[i].k < a[j].k
@@ -114,12 +118,24 @@ func (a byCountAlpha) Less(i, j int) bool {
 	return a[i].v > a[j].v // Greater than to sort DESC
 }
 
-func numDigits(x uint) int{
-	if x < 10 {return 1}
-	if x < 100 {return 2}
-	if x < 1000 {return 3}
-	if x < 10000 {return 4}
-	if x < 100000 {return 5}
-	if x < 1000000 {return 6}
-	return 21;
+func numDigits(x uint) int {
+	if x < 10 {
+		return 1
+	}
+	if x < 100 {
+		return 2
+	}
+	if x < 1000 {
+		return 3
+	}
+	if x < 10000 {
+		return 4
+	}
+	if x < 100000 {
+		return 5
+	}
+	if x < 1000000 {
+		return 6
+	}
+	return 21
 }

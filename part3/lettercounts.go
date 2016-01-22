@@ -13,7 +13,7 @@ I ended having to make a trade off: Provide a data structure that could be index
 a built in map or keep track of rune lengths at insert and alocate memory for output at O(1)
 
 I added Json() as an example of spending O(n) to calculate the size of memory to allocate
-for the output string. Even it had another trade off loop through once and append/allocate as
+for the output string. Even it had another trade off: loop through once and append/allocate as
 I went along or O(n) twice and just do one allocation. I don't know the right answer.
 
 */

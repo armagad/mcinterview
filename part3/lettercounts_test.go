@@ -1,6 +1,7 @@
 package part3
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -24,7 +25,7 @@ func TestCountlettersExamples(t *testing.T) {
 	}
 
 	l = Countletters("foobar baz")
-	if l.Json() != example || !checkCounts(l, map[rune]uint{'f': 1, 'r': 1, 'z': 1, 'a': 2, 'b': 2, 'o': 2}) {
+	if fmt.Sprintf("%s", l) != "abofrz" || !checkCounts(l, map[rune]uint{'f': 1, 'r': 1, 'z': 1, 'a': 2, 'b': 2, 'o': 2}) {
 		t.Error("Failed.")
 	}
 

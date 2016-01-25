@@ -1,5 +1,9 @@
 /*------------------ Add CSS Here ------------------- */
 
+h2{
+	text-transform: uppercase;
+}
+
 label{
 	display: block;
 	width: 320px;
@@ -20,6 +24,7 @@ form{
 label input,label textarea{
 	width: 200px;
 	float: right;
+	color: #2A2A2A;
 }
 
 label[for=message]{

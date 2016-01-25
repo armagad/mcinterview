@@ -4,13 +4,6 @@ h2{
 	text-transform: uppercase;
 }
 
-label{
-	display: block;
-	width: 320px;
-	clear: both;
-	height: 33px;
-}
-
 fieldset{
 	border: 0;
 	margin-left: 80px;
@@ -19,6 +12,13 @@ fieldset{
 form{
 	margin-top: 70px;
 	position:relative;
+}
+
+label{
+	display: block;
+	width: 320px;
+	clear: both;
+	height: 33px;
 }
 
 label input,label textarea{
@@ -40,4 +40,35 @@ label[for=message]{
 	position: absolute;
 	top: 100px;
 	left: 670px;
+}
+
+@media screen and (max-width: 855px){
+
+	form{
+		margin-top: 30px;
+		position: static;
+	}
+
+	label{
+		width: 320px;
+		clear: both;
+		height: auto;
+		margin-bottom: 5px;
+	}
+
+	label input,label textarea{
+		width: 200px;
+		float: none;
+		display: block;
+		color: #2A2A2A;
+	}
+
+	label[for=message]{
+		width: 320px;
+		position: static;
+	}
+
+	#submit{
+		position: static;
+	}
 }

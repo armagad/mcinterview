@@ -9,66 +9,60 @@ fieldset{
 	margin-left: 80px;
 }
 
-form{
-	margin-top: 70px;
-	position:relative;
-}
-
 label{
-	display: block;
 	width: 320px;
 	clear: both;
-	height: 33px;
+	display: block;
 }
 
 label input,label textarea{
 	width: 200px;
-	float: right;
+	display: block;
 	color: #2A2A2A;
 }
 
-label[for=message]{
-	width: 285px;
-	position: absolute;
-	top: 0px;
-	left: 360px;
-}
 #message{
 	height: 117px;
 }
-#submit{
-	position: absolute;
-	top: 100px;
-	left: 670px;
+
+/* Mobile */
+
+form{
+	margin-top: 30px;
 }
 
-@media screen and (max-width: 855px){
+label input,label textarea{
+	margin-bottom: 5px;
+}
+
+/* Browser */
+@media screen and (min-width: 855px){
 
 	form{
-		margin-top: 30px;
-		position: static;
+		margin-top: 70px;
+		position:relative;
 	}
 
 	label{
-		width: 320px;
-		clear: both;
-		height: auto;
-		margin-bottom: 5px;
+		display: block;
+		height: 33px;
+		margin-bottom: 0;
 	}
 
 	label input,label textarea{
-		width: 200px;
-		float: none;
-		display: block;
-		color: #2A2A2A;
+		float: right;
 	}
 
 	label[for=message]{
-		width: 320px;
-		position: static;
+		width: 285px;
+		position: absolute;
+		top: 0px;
+		left: 360px;
+	}
+	#submit{
+		position: absolute;
+		top: 100px;
+		left: 670px;
 	}
 
-	#submit{
-		position: static;
-	}
 }

@@ -1,3 +1,6 @@
+# Go code is in directory part3 !!!! #
+
+
 # MasteryConnect Coding Test #
 
 ---

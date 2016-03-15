@@ -1,5 +1,5 @@
 # Go code is in directory part3 !!!! #
-
+The novel bit is in lettercounts. It was a lot more work in Go (I wrote a reference solution in PHP with about 7 lines of code) but in Go I know UTF-8 is going to work because it made me take it into account with its Rune datatype. And if anyone had to maintain this after I was gone they could see all the extra UTF-8 (ie it is not abstracted away into a library)
 
 # MasteryConnect Coding Test #
 
